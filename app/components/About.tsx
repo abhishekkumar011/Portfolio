@@ -1,7 +1,7 @@
 "use client";
-import { motion } from "framer-motion";
-import { Card, CardContent } from "@/ui/ui/card";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/ui/card";
 
 export default function About() {
   return (
@@ -14,7 +14,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-b from-blue-400 to-purple-400 bg-clip-text text-transparent">
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
@@ -46,7 +46,7 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-white mb-6">
                   Hello, I'm Abhishek Kumar!
                 </h3>
-                <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
+                <div className="space-y-4 text-gray-300 text-lg">
                   <p>
                     I'm a passionate Full stack Developer and with a strong
                     passion for building clean, scalable, and user-focused web

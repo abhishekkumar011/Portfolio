@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Download, FileText, Menu, X } from "lucide-react";
@@ -52,7 +52,7 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
               </motion.button>
             ))}
-            <a
+            <Link
               href="/AbhishekResume.pdf"
               target="_blank"
               className="bg-blue-600 px-4 py-2 flex items-center gap-2 cursor-pointer rounded text-sm text-white"
@@ -60,7 +60,7 @@ export default function Navbar() {
               <FileText size={15} />
               Resume
               <Download size={15} />
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,7 +87,7 @@ export default function Navbar() {
                 {item.name}
               </button>
             ))}
-            <a
+            <Link
               href="/AbhishekResume.pdf"
               target="_blank"
               className="bg-blue-600 px-4 py-4 flex items-center justify-between gap-2 cursor-pointer rounded text-sm text-white mt-3"
@@ -97,7 +97,7 @@ export default function Navbar() {
                 Resume
               </span>
               <Download size={15} />
-            </a>
+            </Link>
           </motion.div>
         )}
       </div>
