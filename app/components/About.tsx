@@ -20,7 +20,7 @@ export default function About() {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +30,12 @@ export default function About() {
           >
             <div className="relative">
               <motion.div className="rounded-sm overflow-hidden">
-                <Image src={"/Resume.jpg"} alt="Abhishek Kumar" width={500} height={300}/>
+                <Image
+                  src={"/Resume.jpg"}
+                  alt="Abhishek Kumar"
+                  width={500}
+                  height={300}
+                />
               </motion.div>
             </div>
           </motion.div>
