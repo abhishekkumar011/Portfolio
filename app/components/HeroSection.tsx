@@ -9,6 +9,31 @@ export default function HeroSection() {
       id="home"
       className="py-20 md:py-0 min-h-screen flex items-center justify-center relative overflow-hidden w-full"
     >
+      <div className="absolute inset-0 opacity-5">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <pattern
+              id="grid"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 10 0 L 0 0 0 10"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="0.2"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
+
       <div className="absolute inset-0">
         <motion.div className="absolute top-1/4 left-1/5 w-96 h-96 bg-red-500/15 rounded-full blur-3xl" />
         <motion.div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
@@ -64,7 +89,7 @@ export default function HeroSection() {
               </Link>
             </button>
 
-            <div className="hidden md:flex border border-gray-100/60 mx-5"></div>
+            <div className="hidden md:flex border border-gray-100/30 mx-5"></div>
 
             <div className="mt-10 md:mt-0 flex md:items-center gap-6 justify-center">
               <motion.a
