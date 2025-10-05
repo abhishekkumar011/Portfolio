@@ -8,13 +8,45 @@ import { Card, CardContent } from "@/ui/card";
 export default function Project() {
   const projects = [
     {
-      title: "Blog App",
+      title: "TripMind AI",
       description:
-        "A full-stack blogging platform with a clean, responsive UI built using React.js and Tailwind CSS. Integrated AppWrite for secure backend services.",
-      tech: ["React.js", "AppWrite", "Redux", "Tailwind CSS"],
+        "An intelligent trip planning app that uses AI to generate personalized travel itineraries with hotels and activities, based on user preferences.",
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "Convex",
+        "OpenAI",
+        "Clerk",
+        "Tailwind CSS",
+      ],
+      src: "/tripmindai.png",
+      gitHubLink: "https://github.com/abhishekkumar011/Trip-Mind-AI",
+      liveLink: "https://trip-mind-ai.vercel.app/",
+    },
+    {
+      title: "Blog Craft",
+      description:
+        "A responsive blogging platform where users can securely create, edit, and publish blog posts with images using JWT authentication.",
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Cloudinary",
+        "Tailwind CSS",
+      ],
       src: "/blogapp.png",
-      gitHubLink: "https://github.com/abhishekkumar011/Blog-App",
-      liveLink: "https://blog-app-livid-seven.vercel.app/",
+      gitHubLink: "https://github.com/abhishekkumar011/BlogCraft",
+      liveLink: "https://blog-craft-gamma.vercel.app/",
+    },
+    {
+      title: "Media Flow",
+      description:
+        "Media Flow is a backend system for a video streaming platform where users can upload, search,  and organize videos into playlists and the dashboard to view channel statistics.",
+      tech: ["Node.js", "Express.js", "MongoDB", "Cloudinary"],
+      src: "/backend.jpg",
+      gitHubLink: "https://github.com/abhishekkumar011/Media-Flow",
+      liveLink: "",
     },
     {
       title: "Scope Seeker",
@@ -33,15 +65,6 @@ export default function Project() {
       src: "/musicapp.png",
       gitHubLink: "https://github.com/abhishekkumar011/Music-next.js",
       liveLink: "https://music-school-delta.vercel.app/",
-    },
-    {
-      title: "Media Flow",
-      description:
-        "Media Flow is a backend system for a video streaming platform where users can upload, search,  and organize videos into playlists and the dashboard to view channel statistics.",
-      tech: ["Node.js", "Express.js", "MongoDB", "Cloudinary"],
-      src: "/backend.jpg",
-      gitHubLink: "https://github.com/abhishekkumar011/Media-Flow",
-      liveLink: "",
     },
   ];
 

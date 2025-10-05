@@ -26,10 +26,6 @@ export default function Skills() {
       skillName: "Tailwind CSS",
     },
     {
-      imageUrl: "/redux.png",
-      skillName: "Redux",
-    },
-    {
       imageUrl: "/java.png",
       skillName: "Java",
     },
@@ -52,6 +48,14 @@ export default function Skills() {
     {
       imageUrl: "/github.png",
       skillName: "GitHub",
+    },
+    {
+      imageUrl: "/html.png",
+      skillName: "HTML",
+    },
+    {
+      imageUrl: "/css.png",
+      skillName: "CSS",
     },
   ];
 
